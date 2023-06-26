@@ -9,6 +9,7 @@ def check(x):
     for i in range(N):
         # x を超えたら切断
         if A[i] - pre >= x:
+            print(i)
             num += 1
             pre = A[i]
 
