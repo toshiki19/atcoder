@@ -15,3 +15,7 @@ if not exists(project_name):
   !apt-get -qq install -y libatlas-base-dev libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler libgflags-dev libgoogle-glog-dev liblmdb-dev opencl-headers ocl-icd-opencl-dev libviennacl-dev
   # build openpose
   !cd openpose && rm -rf build || true && mkdir build && cd build && cmake .. && make -j`nproc`
+
+  # openposeとcap.get(cv2.CAP_PROP_FRAME_COUNT)で取得するフレームが一致するか確認する。
+  # フレームを全て画像で保存しfor文で回す
+  # フレームレートを下げる
