@@ -19,3 +19,4 @@ if not exists(project_name):
   # openposeとcap.get(cv2.CAP_PROP_FRAME_COUNT)で取得するフレームが一致するか確認する。
   # フレームを全て画像で保存しfor文で回す
   # フレームレートを下げる
+  # 卒論目的を考える
