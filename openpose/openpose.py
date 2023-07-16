@@ -20,4 +20,6 @@ if not exists(project_name):
   # フレームを全て画像で保存しfor文で回す
   # フレームレートを下げる
   # 院進提出物完了
+  # youtube作成予定立てた
+  #英語の勉強
 
