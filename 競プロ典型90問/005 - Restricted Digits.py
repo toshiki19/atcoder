@@ -16,3 +16,8 @@ def mul(dpi, dpj, tj):
             res[(p * tj + q) % B] += dpi[p] * dpj[q]
             res[(p * tj + q) % B] %= MOD
     return res
+
+# ten[i]: 10^(2^i) を B で割ったあまり
+ten = [10] * LOG
+for i in range(1, LOG):
+    ten[i] = (ten[i - 1] * ten[i - 1]) % B
