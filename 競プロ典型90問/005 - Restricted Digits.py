@@ -21,3 +21,10 @@ def mul(dpi, dpj, tj):
 ten = [10] * LOG
 for i in range(1, LOG):
     ten[i] = (ten[i - 1] * ten[i - 1]) % B
+
+# dp[2^i][r] を doubling[i][r] と書くことにする
+doubling = [[0] * B for _ in range(LOG)]
+
+# 初期化 (doubling[0] = dp[1])
+for k in range(K):
+    doubling[0][C[k] % B] += 1
