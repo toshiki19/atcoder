@@ -28,3 +28,15 @@ doubling = [[0] * B for _ in range(LOG)]
 # 初期化 (doubling[0] = dp[1])
 for k in range(K):
     doubling[0][C[k] % B] += 1
+
+# ダブリング
+for i in range(1, LOG):
+    doubling[i] = mul(doubling[i - 1], doubling[i - 1], ten[i - 1])
+
+# ダブリングした結果をもとに答えを求める
+res = [0] * B
+res[0] = 1
+for i in range(LOG):
+    if N & (1 << i):
+        res = mul(res, doubling[i], ten[i])
+print(res[0])
