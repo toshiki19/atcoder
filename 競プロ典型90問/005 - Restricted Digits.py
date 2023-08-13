@@ -39,4 +39,4 @@ res[0] = 1
 for i in range(LOG):
     if N & (1 << i):
         res = mul(res, doubling[i], ten[i])
-print(res[0])
+
