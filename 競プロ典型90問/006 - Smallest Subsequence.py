@@ -3,3 +3,5 @@
 def calc_next(S):
     # 文字列 S の長さ
     N = len(S)
+    # 答え
+    res = [[N] * 26 for _ in range(N + 1)]
