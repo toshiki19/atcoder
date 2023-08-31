@@ -17,3 +17,7 @@ def calc_next(S):
 
     # 答えを返す
     return res
+
+# 入力
+N, K = map(int, input().split())
+S = input()
