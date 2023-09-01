@@ -21,3 +21,7 @@ def calc_next(S):
 # 入力
 N, K = map(int, input().split())
 S = input()
+
+# 前処理
+res = ''
+nex = calc_next(S)
