@@ -29,4 +29,4 @@ def dfs(s):
 dist0 = dfs(0)
 mv = max(enumerate(dist0), key=lambda x: x[1])[0]
 distmv = dfs(mv)
-print(max(distmv) + 1)
+print(max(distmv) + 1
