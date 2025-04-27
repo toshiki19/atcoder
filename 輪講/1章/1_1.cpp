@@ -8,7 +8,7 @@ bool isUniqueChars(const string& str) {
     for (int i = 0; i < str.length(); i++) {
         int val = str[i] - 'a';
         if ((checker & (1 << val)) > 0) {
-            return false;
+            return false; // Character already found
         }
         checker |= (1 << val);
     }
