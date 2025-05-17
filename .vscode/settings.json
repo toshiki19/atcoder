@@ -1,7 +1,11 @@
 {
     "files.associations": {
+        "*.dbclient-js": "javascript",
         "unordered_set": "cpp",
         "iostream": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "ostream": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     }
 }
